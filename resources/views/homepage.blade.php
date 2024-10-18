@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets\img\logo.png" rel="icon">
+  <link href="assets\img\logo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -42,7 +42,8 @@
         <ul>
           <li><a href="home" class="active">Home</a></li>
           <li><a href="review">Review</a></li>
-          <li><a href="Login/Sign-Up">Login/Sign-Up</a></li>
+          <li><a href="login">Login</a></li>
+          <li><a href="register">Register</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -89,10 +90,10 @@
                   <img src="assets\img\salon1.jpeg" alt="Image" class="img-fluid">
                 </div>
                 <div class="swiper-slide">
-                  <img src="public\assets\img\salon2.jpeg" alt="Image" class="img-fluid">
+                  <img src="assets\img\salon2.jpeg" alt="Image" class="img-fluid">
                 </div>
                 <div class="swiper-slide">
-                  <img src="public\assets\img\salon3.jpeg" alt="Image" class="img-fluid">
+                  <img src="assets\img\salon3.jpeg" alt="Image" class="img-fluid">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
