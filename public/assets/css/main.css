@@ -426,6 +426,8 @@ h6 {
   padding: 60px 0;
   font-size: 14px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  display: flex;
+  justify-content: center;
 }
 
 .footer a {
@@ -467,8 +469,11 @@ h6 {
 .footer .widget .widget-heading {
   font-size: 15px;
   color: var(--heading-color);
-  margin-bottom: 20px;
+  margin: 0 auto 20px; 
+  text-align: center;
+  max-width: fit-content; 
 }
+
 
 .footer .widget ul li {
   margin-bottom: 10px;
@@ -491,7 +496,14 @@ h6 {
 
 .footer .social-icons li {
   display: inline-block;
+  margin-right: 10px; /* Menambahkan jarak antara ikon jika ada */
 }
+
+.small-icon {
+  font-size: 2px; /* Set the desired size for the icons */
+  line-height: 1;  /* Adjust line height for better vertical alignment */
+}
+
 
 .footer .social-icons li a {
   display: inline-block;
@@ -521,6 +533,10 @@ h6 {
 
 .footer .social-icons li:first-child a {
   padding-left: 0;
+}
+
+.footer .social-icons li:last-child {
+  margin-right: 0; 
 }
 
 .footer .footer-subscribe form {
@@ -1288,6 +1304,67 @@ section,
   padding: 20px 20px 20px 20px;
   color: var(--default-color);
 }
+
+/*--------------------------------------------------------------
+# Perawatan & Pelayanan Section
+--------------------------------------------------------------*/
+.perawatan-pelayanan {
+  background-color: #f0f0f0; 
+  padding: 20px; 
+  text-align: center; 
+  transition: background-color 0.3s ease; /* Transisi untuk perubahan warna latar belakang */
+}
+
+.perawatan-pelayanan:hover {
+  background-color: #e0e0e0; /* Perubahan warna latar belakang saat dihover */
+}
+
+.perawatan-pelayanan h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #333; 
+  margin: 0; 
+  transition: transform 0.3s ease; /* Transisi untuk efek transformasi */
+}
+
+.perawatan-pelayanan h3:hover {
+  transform: scale(1.1); /* Memperbesar teks saat dihover */
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Pusatkan card */
+  flex-wrap: wrap; /* Membuat card dapat membungkus ke baris baru jika tidak muat */
+}
+
+.card {
+  margin: 10px; /* Jarak antar card */
+  transition: transform 0.3s, box-shadow 0.3s; /* Efek transisi yang halus */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Memperbesar ukuran card saat hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+.card-img-top {
+  height: 300px; /* Atur tinggi gambar */
+  width: 100%; /* Memastikan lebar gambar sesuai dengan card */
+  object-fit: cover; /* Memastikan gambar terisi area yang ditentukan tanpa terdistorsi */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Ukuran font untuk judul card */
+  margin-bottom: 0.5rem; /* Jarak bawah judul */
+}
+
+.card-text {
+  font-size: 1rem; /* Ukuran font untuk teks */
+  line-height: 1.5; /* Jarak antar baris teks */
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Testimonials Section
