@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthManager;
+use Illuminate\Support\Facades\Cookie;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,15 +15,24 @@ use App\Http\Controllers\AuthManager;
 |
 */
 
-Route::get('/home', function () {
+// Rute untuk halaman home
+Route::get('home', function () {
     return view('homepage');
-});
+})->name('home'); // Menambahkan nama untuk rute home
 
-Route::get('/login', [AuthManager::class, 'login']) -> name('login');
-Route::post('/login', [AuthManager::class, 'loginPost']) -> name('login.post');
-Route::get('/register', [AuthManager::class, 'register']) -> name('register');
-Route::post('/register', [AuthManager::class, 'registerPost']) -> name('register.post');
-Route::get('/logout', [AuthManager::class, 'logout']) -> name('logout');
+// Rute untuk login
+Route::get('login', [AuthManager::class, 'login'])->name('login');
+Route::post('login', [AuthManager::class, 'loginPost'])->name('login.post');
+
+// Rute untuk register
+Route::get('register', [AuthManager::class, 'register'])->name('register');
+Route::post('register', [AuthManager::class, 'registerPost'])->name('register.post');
+
+// Rute untuk logout
+Route::get('logout', [AuthManager::class, 'logout'])->name('logout');
+
+// Rute untuk review
 Route::get('/review', function () {
-    return view('review');
-});
+    return view('review'); // Ganti dengan nama view yang sesuai
+})->name('review');
+
