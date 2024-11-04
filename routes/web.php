@@ -4,16 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthManager;
 use Illuminate\Support\Facades\Cookie;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 // Rute untuk halaman home
 Route::get('home', function () {
@@ -35,4 +25,5 @@ Route::get('logout', [AuthManager::class, 'logout'])->name('logout');
 Route::get('/review', function () {
     return view('review'); // Ganti dengan nama view yang sesuai
 })->name('review');
+
 
