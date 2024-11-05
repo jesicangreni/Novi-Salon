@@ -41,7 +41,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="home" class="active">Home</a></li>
+          <li><a href="/" class="active">Home</a></li>
           <li><a href="review">Review</a></li>
           <li><a href="Login/Sign-Up">Login/Sign-Up</a></li>
         </ul>
@@ -100,7 +100,7 @@
             </div>
           </div>
           <div class="col-lg-4 order-lg-1">
-            <span class="section-subtitle" data-aos="fade-up">Selamat Datang</span>
+            <span class="section-subtitle" data-aos="fade-up">Selamat Datang Di Novi Salon</span>
             <h1 class="mb-4" data-aos="fade-up">
             Sentuhan Profesional untuk Kecantikan Alami Anda
             </h1>
