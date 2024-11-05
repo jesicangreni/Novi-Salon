@@ -37,7 +37,6 @@
     </form>
 
     <div class="text-center mt-3">
-        <p><a href="#">Lupa Password?</a></p>
         <p>Belum memiliki akun? <a href="{{ route('register') }}">Daftar sekarang</a></p>
     </div>
 </div>
