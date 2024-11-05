@@ -45,7 +45,8 @@
         <ul>
           <li><a href="/" class="active">Home</a></li>
           <li><a href="review">Review</a></li>
-          <li><a href="Login/Sign-Up">Login/Sign-Up</a></li>
+          <li><a href="login">Login</a></li>
+          <li><a href="register">Register</a></li>
         </ul>
 		<i class="mobile-nav-toggle d-xl-none bi bi-list" id="sidebarToggle" style="cursor: pointer;"></i>
       </nav>

@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Cookie;
 
 
 // Rute untuk halaman home
-Route::get('home', function () {
+Route::get('/', function () {
     return view('homepage');
 })->name('home'); // Menambahkan nama untuk rute home
 
